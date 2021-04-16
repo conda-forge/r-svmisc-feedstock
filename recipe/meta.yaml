@@ -1,4 +1,4 @@
-{% set version = '1.1.0' %}
+{% set version = "1.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/svMisc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/svMisc/svMisc_{{ version }}.tar.gz
-  sha256: c2d6a546467038f0e4366a6189716b8f97be5477c1243fa50d508bcec7512207
+  sha256: 6aa00bc86c6ba543c50872413534ae8d1b7662af9013f7886e8a7f4f57841579
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,11 +36,9 @@ test:
 about:
   home: https://github.com/SciViews/svMisc, http://www.sciviews.org/SciViews-R
   license: GPL-2
-  summary: 'Miscellaneous functions for SciViews or general use: manage a temporary environment
-    attached to the search path for temporary variables you do not want to save() or
-    load(), test if Aqua, Mac, Win, ... Show progress bar, etc.'
+  summary: 'Miscellaneous functions for SciViews or general use: manage a temporary environment attached to the search path for temporary variables you do not want to save() or load(), test if Aqua, Mac, Win, ... Show progress bar, etc.'
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
