@@ -35,10 +35,11 @@ test:
 
 about:
   home: https://github.com/SciViews/svMisc, http://www.sciviews.org/SciViews-R
-  license: GPL-2
+  license: GPL-2.0-only
   summary: 'Miscellaneous functions for SciViews or general use: manage a temporary environment attached to the search path for temporary variables you do not want to save() or load(), test if Aqua, Mac, Win, ... Show progress bar, etc.'
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
