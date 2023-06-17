@@ -1,11 +1,11 @@
-About r-svmisc
-==============
+About r-svmisc-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-svmisc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/SciViews/svMisc, http://www.sciviews.org/SciViews-R
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-svmisc-feedstock/blob/main/LICENSE.txt)
 
 Summary: Miscellaneous functions for SciViews or general use: manage a temporary environment attached to the search path for temporary variables you do not want to save() or load(), test if Aqua, Mac, Win, ... Show progress bar, etc.
 
