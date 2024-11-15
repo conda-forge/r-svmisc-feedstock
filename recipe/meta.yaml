@@ -1,4 +1,4 @@
-{% set version = "1.2.3" %}
+{% set version = "1.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/svMisc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/svMisc/svMisc_{{ version }}.tar.gz
-  sha256: 2dd52147981b51a15071b4cd77a87f790edac77bc215dbbea59764bb0a8c73e4
+  sha256: 737cf33092eb4027884c3e5e7835fef74b7d97bd4051afeb072a40d5d760586a
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -23,8 +23,12 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-cli >=3.6.1
+    - r-rlang >=1.1.1
   run:
     - r-base
+    - r-cli >=3.6.1
+    - r-rlang >=1.1.1
 
 test:
   commands:
