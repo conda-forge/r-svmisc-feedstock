@@ -23,8 +23,12 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
+    - r-cli >=3.6.1
+    - r-rlang >=1.1.1
   run:
     - r-base
+    - r-cli >=3.6.1
+    - r-rlang >=1.1.1
 
 test:
   commands:
